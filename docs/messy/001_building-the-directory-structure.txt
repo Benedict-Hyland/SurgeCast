@@ -1,0 +1,5 @@
+Here I have built the directory structure following two resources: A question asked to GPT, and an article from Neptune AI. These can be found in the references folder under doc_001.
+
+This directory will be built upon as time goes on, version control should keep tracks, but the idea was to have my entire pipeline working in one directory, so that it can easily be 
+understood in the future. These doc files should contain my workflow, I will create another directory called neat with handy neat instructions written in it, for ease. But this should 
+have all of my crazy thoughts etc. so that every little detail can be understood
