@@ -1,0 +1,12 @@
+name: surgecast
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - python=3.10
+  - scipy
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+prefix: /Users/benedicthyland/miniconda3/envs/surgecast
