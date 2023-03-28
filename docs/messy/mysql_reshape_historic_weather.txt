@@ -1,0 +1,173 @@
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '00'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_3` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_3` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_3` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_3` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_3` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_3` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_3` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_3` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_3` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_3` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_3` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_3` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_3` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_3` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_3` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_3` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '03'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_6` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_6` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_6` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_6` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_6` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_6` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_6` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_6` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_6` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_6` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_6` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_6` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_6` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_6` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_6` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_6` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '06'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_9` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_9` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_9` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_9` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_9` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_9` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_9` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_9` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_9` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_9` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_9` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_9` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_9` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_9` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_9` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_9` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '09'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_12` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_12` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_12` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_12` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_12` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_12` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_12` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_12` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_12` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_12` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_12` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_12` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_12` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_12` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_12` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_12` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '12'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_15` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_15` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_15` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_15` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_15` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_15` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_15` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_15` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_15` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_15` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_15` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_15` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_15` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_15` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_15` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_15` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '15'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_18` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_18` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_18` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_18` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_18` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_18` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_18` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_18` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_18` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_18` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_18` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_18` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_18` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_18` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_18` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_18` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '18'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_21` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_21` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_21` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_21` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_21` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_21` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_21` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_21` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_21` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_21` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_21` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_21` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_21` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_21` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_21` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_21` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
+
+UNION ALL
+
+SELECT STR_TO_DATE(CONCAT(Date, ' ', '21'), '%Y-%m-%d %H') AS DateTime, Postcode,
+    MAX(CASE WHEN Variable = 'CC' THEN `Hour_0_24` END) AS CC,
+    MAX(CASE WHEN Variable = 'CP' THEN `Hour_0_24` END) AS CP,
+    MAX(CASE WHEN Variable = 'GST' THEN `Hour_0_24` END) AS GST,
+    MAX(CASE WHEN Variable = 'HiT' THEN `Hour_0_24` END) AS HiT,
+    MAX(CASE WHEN Variable = 'HL' THEN `Hour_0_24` END) AS HL,
+    MAX(CASE WHEN Variable = 'LoT' THEN `Hour_0_24` END) AS LoT,
+    MAX(CASE WHEN Variable = 'MWD' THEN `Hour_0_24` END) AS MWD,
+    MAX(CASE WHEN Variable = 'MWS' THEN `Hour_0_24` END) AS MWS,
+    MAX(CASE WHEN Variable = 'NCP' THEN `Hour_0_24` END) AS NCP,
+    MAX(CASE WHEN Variable = 'SD' THEN `Hour_0_24` END) AS SD,
+    MAX(CASE WHEN Variable = 'SD_P' THEN `Hour_0_24` END) AS SD_P,
+    MAX(CASE WHEN Variable = 'SwD' THEN `Hour_0_24` END) AS SwD,
+    MAX(CASE WHEN Variable = 'SwF' THEN `Hour_0_24` END) AS SwF,
+    MAX(CASE WHEN Variable = 'T' THEN `Hour_0_24` END) AS T,
+    MAX(CASE WHEN Variable = 'TP' THEN `Hour_0_24` END) AS TP,
+    MAX(CASE WHEN Variable = 'Vs' THEN `Hour_0_24` END) AS Vs
+FROM `Hindcast_day0_districts_2023_03`
+GROUP BY Date, Postcode
