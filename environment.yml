@@ -9,4 +9,5 @@ dependencies:
   - pandas
   - scikit-learn
   - matplotlib
+  - pymysql
 prefix: /Users/benedicthyland/miniconda3/envs/surgecast
