@@ -1,0 +1,1 @@
+# This is a file for holding all the tests of the pipeline, these can be performed at the start of running the pipeline to know that it is running correctly

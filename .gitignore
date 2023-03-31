@@ -130,5 +130,7 @@ dmypy.json
 
 
 # Sensitive Data
-config
-data
+*.ipynb_checkpoints
+*.ipynb
+*.ini
+*.csv
